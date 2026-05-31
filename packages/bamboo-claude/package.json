@@ -1,0 +1,27 @@
+{
+    "name": "@bamboo/claude",
+    "version": "0.0.1",
+    "description": "Bamboo wrapper for Claude Code",
+    "bin": {
+        "bamboo-claude": "./dist/bin/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/bin/cli.js"
+    },
+    "dependencies": {
+        "@bamboo/core": "workspace:*"
+    },
+    "peerDependencies": {
+        "@anthropic-ai/claude-code": "*"
+    },
+    "peerDependenciesMeta": {
+        "@anthropic-ai/claude-code": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}

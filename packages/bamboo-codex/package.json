@@ -1,0 +1,27 @@
+{
+    "name": "@bamboo/codex",
+    "version": "0.0.1",
+    "description": "Bamboo wrapper for Codex CLI",
+    "bin": {
+        "bamboo-codex": "./dist/bin/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/bin/cli.js"
+    },
+    "dependencies": {
+        "@bamboo/core": "workspace:*"
+    },
+    "peerDependencies": {
+        "@openai/codex": "*"
+    },
+    "peerDependenciesMeta": {
+        "@openai/codex": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}
